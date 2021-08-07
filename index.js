@@ -10,7 +10,7 @@ app.post('/', (req, res) => {
     let body = req.body
 
     // Fetch solver
-    var solver = ""
+    var solver = "echo"
     if (body.hasOwnProperty('options')) {
         if (body.options.hasOwnProperty('solver')) {
             solver = body.options.solver
